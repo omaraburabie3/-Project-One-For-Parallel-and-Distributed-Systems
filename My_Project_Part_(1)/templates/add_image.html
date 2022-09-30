@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}
+Add Image
+{% endblock %}
+{% block content %}
+<form action="/add_image" method="POST" class="put-data">
+    <label for="key">Key: 
+        <input type="number" name="key" id="key" placeholder="Enter a key for your image..." required>
+    </label>
+    <label for="name">Image: 
+        <input type="file" name="name" id="name" required>
+    </label>
+    <button class="put" type="submit" value="put">Put</button>
+</form>
+{% endblock %}

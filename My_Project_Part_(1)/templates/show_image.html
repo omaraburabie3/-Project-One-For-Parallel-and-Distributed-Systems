@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block title %}
+Show Image
+{% endblock %}
+{% block content %}
+<form class="get-data">
+    <label for="key">Key: 
+        <input type="text" name="key" id="key" class="key-show" placeholder="Enter a key for an image..." required>
+    </label>
+    <button class="get" type="submit" value="get">Get</button>
+    <img src="{{ url_for('static', filename='temp.JPG') }}" alt="photo from gallery" class="get-image">
+</form>
+{% endblock %}

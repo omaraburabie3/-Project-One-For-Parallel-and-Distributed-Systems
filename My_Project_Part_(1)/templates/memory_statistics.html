@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}
+Memory Statistics
+{% endblock %}
+{% block content %}
+<form class="show-statistics">
+    <label>The current statistics for the mem-cache over the past 10 minutes are: </label>
+    <hr class="hr-show-statistics">
+    <ul class="statistics">
+        <li id="statistics-item">Number of items in cache: <label id="items-number">0</label></li>
+        <li id="statistics-item">Total size of items in cache: <label id="items-size">0</label></li>
+        <li id="statistics-item">Number of requests served: <label id="requests-number">0</label></li>
+        <li id="statistics-item">Miss rate: <label id="miss-rate">0</label></li>
+        <li id="statistics-item">Hit rate: <label id="hit-rate">0</label></li>
+    </ul>
+</form>
+{% endblock %}
